@@ -1,0 +1,17 @@
+{
+  "name": "mcginty",
+  "version": "1.0.0",
+  "description": "Web3 Integration Tests",
+  "main": "index.js",
+  "repository": "https://github.com/folkengine/mcginty.git",
+  "author": "Christoph <ignatz@gmail.com>",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "web3": "^1.0.0-beta.50"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  }
+}
