@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/mocha@6.0.2/mocha.css" rel="stylesheet">
+    <script src="http://chaijs.com/chai.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mocha@6.0.2/mocha.js"></script>
+
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <!-- Add the Chai assertion library -->
+
+
+
+    <script>
+      // Set chai.expect as a global variable
+      // const expect = chai.expect;
+
+      // Setup Mocha to use the BDD interface
+      mocha.setup('bdd');
+    </script>
+
+    <!-- Import the sum function -->
+    <script src="common.js"></script>
+
+    <!-- Import the tests for the sum function -->
+    <script src="common.spec.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>

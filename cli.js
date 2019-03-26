@@ -2,8 +2,10 @@
 
 require('dotenv').config();
 const program = require('commander');
+const Web3 = require('web3');
 
 const FWC = require('./src/fwc');
+const wagerEveneName = 'Wager';
 
 program
   .version(process.env.VERSION).usage('[options] <file ...>')
@@ -16,4 +18,8 @@ if (program.integer) {
   console.log('yes');
 } else {
   console.log(fwc.toString());
+}
+
+function listen() {
+
 }

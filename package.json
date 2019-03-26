@@ -12,7 +12,8 @@
   },
   "scripts": {
     "bin": "./cli.js",
-    "test": "mocha"
+    "test": "mocha",
+    "test:browser": "live-server --port=9000 --mount=/:test"
   },
   "dependencies": {
     "chalk": "^2.4.2",
@@ -25,6 +26,7 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.2",
     "chai": "^4.2.0",
+    "live-server": "^1.2.1",
     "mocha": "^6.0.2"
   }
 }
